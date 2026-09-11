@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11 -Iinit
-SRCS = $(wildcard *.c) $(wildcard init/*.c)
+SRCS = $(wildcard *.c) $(wildcard init/*.c) $(wildcard feat/flags/*.c)
 TARGET = .build/main
 
 all:
