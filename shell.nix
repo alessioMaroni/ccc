@@ -6,4 +6,3 @@ pkgs.mkShell {
     gnumake
   ];
 }
-
