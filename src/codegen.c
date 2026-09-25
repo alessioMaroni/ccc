@@ -1,6 +1,6 @@
-#include "codegen.h"
-#include "tokens_def.h"
-#include "x86_64_regs_def.h"
+#include "../include/codegen.h"
+#include "../include/tokens_def.h"
+#include "../include/x86_64_regs_def.h"
 
 #include <string.h>
 

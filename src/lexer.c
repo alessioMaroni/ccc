@@ -1,5 +1,5 @@
-#include "lexer.h"
-#include "tokens_def.h"
+#include "../include/lexer.h"
+#include "../include/tokens_def.h"
 #include <stdio.h>
 
 const char* keyword_strings[KW_COUNT] = {
