@@ -24,7 +24,7 @@ TokenType identify_token_group(char tb[TOKENB_SIZE], KeyWords *matched_kw)
         }
     }
 
-    if (strcmp(tb, TOKEN_MAIN) == 0) 
+    if (strcmp(tb, TOKEN_SP_MAIN) == 0) 
     {
         return TOKEN_TYPE_SPECIAL;
     }
@@ -32,24 +32,34 @@ TokenType identify_token_group(char tb[TOKENB_SIZE], KeyWords *matched_kw)
     return TOKEN_TYPE_UNKNOWN;
 }
 
-void print_token_found(char tb[TOKENB_SIZE])
+char* verify_found_token(char tb[TOKENB_SIZE])
 {
     KeyWords kw_type;
     TokenType group = identify_token_group(tb, &kw_type);
+
+    char* verified_token = NULL;
 
     switch (group)
     {
         case TOKEN_TYPE_KEYWORD:
             printf("[GROUP: KEYWORD] Match trovato: {%s} (Enum ID: %d)\n", keyword_strings[kw_type], kw_type);
+            verified_token = tb;
             break;
 
         case TOKEN_TYPE_SPECIAL:
             printf("[GROUP: SPECIAL] Match trovato: {%s}\n", tb);
+            verified_token = tb;
             break;
 
         case TOKEN_TYPE_UNKNOWN:
         default:
-            printf("[TOKEN UNRECOGNIZED] Nessun gruppo corrispondente per: {%s}\n", tb);
+            if(strcmp(tb, " ") == 1)
+            {
+                printf("[TOKEN UNRECOGNIZED] Nessun gruppo corrispondente per: {%s}\n", tb);
+            }
+
             break;
     }
+
+    return verified_token;
 }

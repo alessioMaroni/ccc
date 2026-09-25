@@ -4,7 +4,7 @@
 #define TOKENB_SIZE 64
 #define KW_COUNT    32
 
-#define TOKEN_MAIN  "main"
+#define TOKEN_SP_MAIN  "main"
 
 #define TOKEN_KW_AUTO      "auto"
 #define TOKEN_KW_BREAK     "break"

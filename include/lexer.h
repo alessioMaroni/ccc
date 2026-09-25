@@ -20,6 +20,6 @@ typedef enum {
 extern const char* keyword_strings[KW_COUNT];
 
 TokenType identify_token_group(char tb[TOKENB_SIZE], KeyWords *matched_kw);
-void print_token_found(char tb[TOKENB_SIZE]);
+char* verify_found_token(char tb[TOKENB_SIZE]);
 
 #endif
