@@ -33,8 +33,14 @@ int main(int argc, char* argv[])
         if((char)c == ' ' || (char)c == '\n')
         {
             print_token_found(token_buffer);
+
+            // Reset token buffer and i to 0
             memset(token_buffer, 0, sizeof(TOKENB_SIZE));
             i ^= i;
+        }
+        else if((char)c == '{' || (char)c == '}' || (char)c == '(' || (char)c == ')')
+        {
+
         }
         else
         {
@@ -46,7 +52,7 @@ int main(int argc, char* argv[])
         }
     }
 
-    if (i > 0) 
+    if (i > 0)
     {
         printf("%s\n", token_buffer);
     }
