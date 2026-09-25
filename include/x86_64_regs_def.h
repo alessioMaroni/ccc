@@ -1,0 +1,86 @@
+#ifndef X86_64_REGS_DEF_H
+#define X86_64_REGS_DEF_H
+
+/* --- General Purpose Registers (64-bit) --- */
+#define REGS_64_RAX "rax"
+#define REGS_64_RBX "rbx"
+#define REGS_64_RCX "rcx"
+#define REGS_64_RDX "rdx"
+#define REGS_64_RSI "rsi"
+#define REGS_64_RDI "rdi"
+#define REGS_64_RBP "rbp"
+#define REGS_64_RSP "rsp"
+#define REGS_64_R8  "r8"
+#define REGS_64_R9  "r9"
+#define REGS_64_R10 "r10"
+#define REGS_64_R11 "r11"
+#define REGS_64_R12 "r12"
+#define REGS_64_R13 "r13"
+#define REGS_64_R14 "r14"
+#define REGS_64_R15 "r15"
+
+/* --- General Purpose Registers (32-bit) --- */
+#define REGS_32_EAX  "eax"
+#define REGS_32_EBX  "ebx"
+#define REGS_32_ECX  "ecx"
+#define REGS_32_EDX  "edx"
+#define REGS_32_ESI  "esi"
+#define REGS_32_EDI  "edi"
+#define REGS_32_EBP  "ebp"
+#define REGS_32_ESP  "esp"
+#define REGS_32_R8D  "r8d"
+#define REGS_32_R9D  "r9d"
+#define REGS_32_R10D "r10d"
+#define REGS_32_R11D "r11d"
+#define REGS_32_R12D "r12d"
+#define REGS_32_R13D "r13d"
+#define REGS_32_R14D "r14d"
+#define REGS_32_R15D "r15d"
+
+/* --- General Purpose Registers (16-bit) --- */
+#define REGS_16_AX   "ax"
+#define REGS_16_BX   "bx"
+#define REGS_16_CX   "cx"
+#define REGS_16_DX   "dx"
+#define REGS_16_SI   "si"
+#define REGS_16_DI   "di"
+#define REGS_16_BP   "bp"
+#define REGS_16_SP   "sp"
+#define REGS_16_R8W  "r8w"
+#define REGS_16_R9W  "r9w"
+#define REGS_16_R10W "r10w"
+#define REGS_16_R11W "r11w"
+#define REGS_16_R12W "r12w"
+#define REGS_16_R13W "r13w"
+#define REGS_16_R14W "r14w"
+#define REGS_16_R15W "r15w"
+
+/* --- General Purpose Registers (8-bit Low) --- */
+#define REGS_8_AL   "al"
+#define REGS_8_BL   "bl"
+#define REGS_8_CL   "cl"
+#define REGS_8_DL   "dl"
+#define REGS_8_SIL  "sil"
+#define REGS_8_DIL  "dil"
+#define REGS_8_BPL  "bpl"
+#define REGS_8_SPL  "spl"
+#define REGS_8_R8B  "r8b"
+#define REGS_8_R9B  "r9b"
+#define REGS_8_R10B "r10b"
+#define REGS_8_R11B "r11b"
+#define REGS_8_R12B "r12b"
+#define REGS_8_R13B "r13b"
+#define REGS_8_R14B "r14b"
+#define REGS_8_R15B "r15b"
+
+/* --- General Purpose Registers (8-bit High - Legacy) --- */
+#define REGS_8_AH   "ah"
+#define REGS_8_BH   "bh"
+#define REGS_8_CH   "ch"
+#define REGS_8_DH   "dh"
+
+/* --- Instruction Pointer and Status Flags (64-bit) --- */
+#define REGS_64_RIP    "rip"
+#define REGS_64_RFLAGS "rflags"
+
+#endif
