@@ -1,6 +1,9 @@
 #ifndef TOKENS_H
 #define TOKENS_H
 
+#define TOKENB_SIZE 64
+#define KW_COUNT    32
+
 #define TOKEN_MAIN  "main"
 
 #define TOKEN_KW_AUTO      "auto"
